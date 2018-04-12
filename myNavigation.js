@@ -23,7 +23,7 @@ var keys = {
 }
 
 var hash = {
-  'q': 'qq.com', 'w': 'weibo.com', 'e': 'ele.me', 'r': 'renren.com', 't': 'tudou.com', 'y': 'youtube.com', 'u': 'uc.com', 'i': 'iqiyi.com', 'o': 'opera.com', 'p': undefined, 'a': 'acfun.tv', 's': 'sohu.com', 'z': 'zhihu.com',  'b': 'baidu.com', 'm': 'www.mcdonalds.com.cn'
+  '1': 'bilibili.com', 'q': 'qq.com', 'w': 'weibo.com', 'e': 'ele.me', 'r': 'renren.com', 't': 'tudou.com', 'y': 'youku.com', 'u': 'uc.com', 'i': 'iqiyi.com', 'o': 'opera.com', 'p': undefined, 'a': 'acfun.cn', 's': 'sohu.com', 'j': 'jd.com', 'z': 'zhihu.com',  'b': 'baidu.com', 'm': 'www.mcdonalds.com.cn'
 }
 var hashInLocalStorage = JSON.parse(localStorage.getItem('newHash') || 'null')
 if(hashInLocalStorage){
