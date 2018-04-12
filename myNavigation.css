@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body{
+  height: 100vh;
+  background: #fefaf1;
+}
+header .logo{
+  float: left;
+  width: 50%;
+}
+header .logo a{
+  background-image: url(./img/navigative-logo.png);
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+header .search{
+  float: right;
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  padding: 34px 0;
+}
+header .search input{
+  background: #777;
+  border-radius: 3px;
+  border: 1px solid #777;
+  padding: 5px;
+  color: white;
+}
+header .search [type=button]:hover{
+  background: #252525;
+  cursor: pointer;
+}
+
+main .kbd-wrapper{
+  padding: 150px 0 200px;
+  background-image: url(./img/kbd-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+main .kbd-wrapper div:nth-of-type(1){
+  margin-left: -100px;
+}
+main .kbd-wrapper div:nth-of-type(3){
+  margin-left: -30px;
+}
+main .kbd-wrapper div:nth-of-type(4){
+  margin-left: -90px;
+}
+main .kbd-wrapper kbd{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #373737;
+  border-radius: 7px;
+  box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1f2020, 0 2px 0 2px #080808;
+  background: linear-gradient(to bottom, #292929 0%,#111111 100%);
+  padding: 20px 30px;
+  margin: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'helvetical';
+  cursor: pointer;
+  width: 75px;
+  height: 65px;
+}
+main .kbd-wrapper kbd:hover{
+  box-shadow: 0 0 0 0;
+}
+main .kbd-wrapper kbd button{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px #777;
+  color: black;
+  background: #cacaca;
+  font-size: 14px;
+  font-family: "方正舒体";
+  outline: none;
+}
+main .kbd-wrapper kbd:hover > button{
+  display: inline-block;
+}
+main .kbd-wrapper kbd > img{
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+}
+main .kbd-wrapper .reset{
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  background: #cacaca;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  font-weight: bold;
+}
+main .kbd-wrapper .reset:hover{
+  background: #444;
+  color: white;
+}
+main .kbd-wrapper .prompt{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
+  color: #aaa;
+  font-family: "楷体";
+  font-size: 18px;
+  display: none;
+}
+footer{
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  color: #999;
+  font-size: 12px;
+  padding-top: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
