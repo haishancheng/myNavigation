@@ -8,6 +8,10 @@
   display: block;
   clear: both;
 }
+/* src=""会显示一圈边框，这个是为了让边框不显示 */
+img[src=""]{
+  opacity: 0;
+}
 
 body{
   height: 100vh;
