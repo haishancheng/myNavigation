@@ -1,3 +1,4 @@
+//无优化，散乱逻辑版本
 function $(val) {
   return document.querySelector(val)
 }
